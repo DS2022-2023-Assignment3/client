@@ -148,7 +148,7 @@ const ChatContainer = (props: ChatProps) => {
     React.useEffect(() => {
         console.log(currentUser);
         ws.current = new WebSocket(
-            `ws://localhost:8080/${currentUser?.id ?? ''}/${
+            `${process.env.REACT_APP_CHAT_URL}/${currentUser?.id ?? ''}/${
                 currentUser?.email ?? ''
             }/${currentUser?.role ?? ''}`
         );
