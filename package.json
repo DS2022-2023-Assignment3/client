@@ -30,7 +30,7 @@
         "websocket": "^1.0.34"
     },
     "scripts": {
-        "env": "echo REACT_APP_API_URL=${API_URL} >> .env && echo REACT_APP_MSG_QUEUE_URL=${MSG_QUEUE_URL} >> .env && echo REACT_APP_CHAT_URL=${CHAT_URL} >> .env",
+        "env": "REACT_APP_API_URL=${API_URL} REACT_APP_MSG_QUEUE_URL=${MSG_QUEUE_URL} REACT_APP_CHAT_URL=${CHAT_URL}",
         "start": "react-scripts start",
         "start:prod": "yarn env && react-scripts start",
         "build": "yarn env && react-scripts build",
