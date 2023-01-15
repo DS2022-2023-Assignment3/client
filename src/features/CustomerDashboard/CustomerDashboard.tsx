@@ -85,7 +85,7 @@ const CustomerDashboard = () => {
         }
 
         clientRef.current = new WebSocket(
-            `${process.env.REACT_APP_MSG_QUEUE_URL}/${currentDevice.id}`
+            `https://msg-queue-kptuidlrxa-ew.a.run.app/${currentDevice.id}`
         );
 
         clientRef.current.onopen = () => {
