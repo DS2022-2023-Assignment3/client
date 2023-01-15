@@ -85,7 +85,7 @@ const CustomerDashboard = () => {
         }
 
         clientRef.current = new WebSocket(
-            `https://msg-queue-kptuidlrxa-ew.a.run.app/${currentDevice.id}`
+            `wss://msg-queue-kptuidlrxa-ew.a.run.app/${currentDevice.id}`
         );
 
         clientRef.current.onopen = () => {
